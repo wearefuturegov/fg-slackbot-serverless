@@ -1,4 +1,8 @@
-'use strict';
+'use strict'
+
+const { WebClient } = require('@slack/web-api')
+
+const web = new WebClient(process.env.SLACK_TOKEN)
 
 module.exports.alert = async event => {
   return {
@@ -11,8 +15,5 @@ module.exports.alert = async event => {
       null,
       2
     ),
-  };
-
-  // Use this code if you don't use the http event with the LAMBDA-PROXY integration
-  // return { message: 'Go Serverless v1.0! Your function executed successfully!', event };
-};
+  }
+}
