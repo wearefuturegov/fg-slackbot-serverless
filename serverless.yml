@@ -8,6 +8,6 @@ provider:
 
 functions:
   hello:
-    handler: handler.hello
+    handler: handler.alert
     events:
-      - http: GET hello
+      - http: GET /
