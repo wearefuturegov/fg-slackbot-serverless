@@ -1,0 +1,23 @@
+{
+  "name": "fg-slackbot-serverless",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wearefuturegov/fg-slackbot-serverless.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wearefuturegov/fg-slackbot-serverless/issues"
+  },
+  "homepage": "https://github.com/wearefuturegov/fg-slackbot-serverless#readme",
+  "dependencies": {
+    "@slack/events-api": "^2.3.4",
+    "@slack/web-api": "^5.11.0"
+  }
+}
