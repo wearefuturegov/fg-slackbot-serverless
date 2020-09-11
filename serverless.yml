@@ -1,6 +1,6 @@
 service: fg-slackbot-serverless
 
-frameworkVersion: '2'
+# frameworkVersion: '2'
 
 provider:
   name: aws
@@ -11,3 +11,4 @@ functions:
     handler: handler.alert
     events:
       - http: GET /
+      - http: POST /
