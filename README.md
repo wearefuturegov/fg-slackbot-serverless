@@ -1,4 +1,4 @@
-### FG Slackbot (serverless version)
+# FG Slackbot (serverless version)
 
 This is a little [Serverless Framework](https://www.serverless.com) project.
 
