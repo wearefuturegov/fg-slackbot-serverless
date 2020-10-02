@@ -40,28 +40,21 @@ module.exports.alert = async event => {
         "type": "section",
         "text": {
           "type": "mrkdwn",
-          "text": ":sparkles: *New channel created* :sparkles: "
-        }
-      },
-      {
-        "type": "section",
-        "text": {
-          "type": "mrkdwn",
-          "text": `<#${id}> _created by_ <@${creator}>`
+          "text": `:sparkles: *New channel created* :sparkles: \n<#${id}> _created by_ <@${creator}>`
         }
       },
     ];
 
 
-    if(conversationResponse.channel.purpose.value) {
-      blocks.push({
-        "type": "section",
-        "text": {
-          "type": "mrkdwn",
-          "text": `> ${conversationResponse.channel.purpose.value} `
-        }
-      })
-    }
+    // if(conversationResponse.channel.purpose.value) {
+    //   blocks.push({
+    //     "type": "section",
+    //     "text": {
+    //       "type": "mrkdwn",
+    //       "text": `> ${conversationResponse.channel.purpose.value} `
+    //     }
+    //   })
+    // }
   
   
     // blocks.push({
