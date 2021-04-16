@@ -9,7 +9,8 @@ const web = new WebClient(process.env.OAUTH_ACCESS_TOKEN, {
 
 // C024ZUHHC = #development channel
 // C024ZJU25 = #general channel
-const channelID = 'C024ZJU25'
+// C01UFKYL13M = #new-channel-community
+const channelID = 'C01UFKYL13M'
 
 module.exports.alert = async event => {
   let parsedBody = JSON.parse(event.body)
